@@ -3,119 +3,70 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Biasaaa</title>
-
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="GoBiz adalah solusi lengkap untuk mengembangkan usaha kuliner Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi.">
-    <meta name="keywords" content="GoBiz, usaha kuliner, icalan, komplek,arisan, komunitas, bisnis, aplikasi bisnis">
-    <meta name="author" content="GoBiz by Indibiz">
-    <meta name="robots" content="index, follow">
-
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:title" content="GoBiz - Solusi untuk Usaha Anda">
-    <meta property="og:description" content="GoBiz adalah solusi lengkap untuk mengembangkan usaha kuliner Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi.">
-    <meta property="og:image" content="img/square.webp">
-    <meta property="og:url" content="https://go.biz.id">
-
-    <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="GoBiz - Solusi untuk Usaha Anda">
-    <meta name="twitter:description" content="GoBiz adalah solusi lengkap untuk mengembangkan usaha kuliner Anda, mulai dari penerimaan pembayaran digital hingga pengelolaan promosi.">
-    <meta name="twitter:image" content="img/square.webp">
-
-    <!-- Favicon -->
-    <link rel="icon" href="img/favicon.ico" type="image/x-icon">
-    
-    <link rel="stylesheet" href="styles.css">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
+
     <header>
         <nav>
-            <div class="logo">
-                <img src="img/logo.webp" alt="https://www.google.com/url?sa=i&url=https%3A%2F%2Fid.pngtree.com%2Ffree-png-vectors%2Flogo-keren&psig=AOvVaw1o9y8pl8thm4AUncjqhUEs&ust=1728722515115000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCJia7bf4hYkDFQAAAAAdAAAAABAE">
-            </div>
-            <ul class="nav-links">
-                <li><a href="#">Menu</a></li>
-                <li><a href="#">Help</a></li>
-                <li><a href="#">Account</a></li>
-                <li><a href="#">Community</a></li>
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
-            <div class="auth-buttons">
-                <button class="btn btn-signup">Masuk</button>
-                <button class="btn btn-Masuk">signup</button>
-            </div>
         </nav>
     </header>
 
-    <section class="hero">
-        <div class="hero-text">
-            <h1>Satu Aplikasi, Beragam Solusi Kembangkan Usaha Anda</h1>
-        </div>
-        <div class="hero-image">
-            <img src="img/square.webp" alt="Hero Image">
-        </div>
-    </section>
-
-    <section class="services">
-        <div class="service">
-            <h2>Bikin Promo dan Pesanan di <span>GoBiz</span></h2>
-        </div>
-        <div class="service">
-            <h2>Terima Pembayaran Digital Pakai <span>GoBiz</span></h2>
-        </div>
-        <div class="service">
-            <h2>Tambah Modal Usaha di <span>GoBiz</span></h2>
-        </div>
-        <div class="service">
-            <h2>Catat Transaksi Secara Digital di <span>GoBiz</span></h2>
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Welcome to My Portfolio</h1>
+            <p>I'm a Web Developer passionate about creating impactful web applications.</p>
+            <a href="#projects" class="btn">See My Work</a>
         </div>
     </section>
 
-    <section class="partners">
-        <h2>Mitra-mitra yang Telah Percaya GoBiz</h2>
-        <div class="partner-logos">
-            <img src="img/partner1.webp" alt="Partner 1">
-            <img src="img/partner2.webp" alt="Partner 2">
-            <!-- Add more logos as needed -->
+    <section id="about">
+        <h2>About Me</h2>
+        <p>My name is [Your Name], and I'm a front-end developer with experience in building responsive and user-friendly websites.</p>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <img src="images/project1.jpg" alt="Project 1">
+            <h3>Project 1</h3>
+            <p>Description of the project goes here.</p>
+        </div>
+        <div class="project">
+            <img src="images/project2.jpg" alt="Project 2">
+            <h3>Project 2</h3>
+            <p>Description of the project goes here.</p>
         </div>
     </section>
 
-    <section class="registration">
-        <h2>Pendaftaran GoBiz</h2>
-        <div class="steps">
-            <div class="step">
-                <h3>Buka Aplikasi GoBiz</h3>
-            </div>
-            <div class="step">
-                <h3>Registrasi</h3>
-            </div>
-            <div class="step">
-                <h3>Aktivasi</h3>
-            </div>
-        </div>
-    </section>
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>If you'd like to reach out, feel free to send me a message!</p>
+        <form>
+            <label for="name">Name:</label>
+            <input type="text" id="Nawal" name="Nawal" required>
 
-    <section class="testimonials">
-        <h2>Cerita mereka yang sudah memilih GoBiz</h2>
-        <div class="testimonial">
-            <p>"Fitur dalam aplikasi GoBiz sangat mempermudah dalam mengelola usaha kuliner."</p>
-            <p>Nedi Sopian, Pemilik pasakanambu</p>
-        </div>
-        <div class="testimonial-video">
-            <video controls>
-                <source src="video.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
-        </div>
+            <label for="email">Email:</label>
+            <input type="email" id="nawalharomaen@gmail.com" name="nawalharomaen@gmail.com" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="Try to know" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
     </section>
 
     <footer>
-        <div class="footer-content">
-            <p>© 2024 GoBizID, PT Informatika Digital Bisnis</p>
-        </div>
+        <p>© 2024 [Nawal]. All rights reserved.</p>
     </footer>
-    
-    <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
