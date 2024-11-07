@@ -1,11 +1,62 @@
-section {
-    padding: 2rem;
-    text-align: center;
-}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Background Coding Effect</title>
+  <style>
+    /* Mengatur gaya dasar untuk halaman */
+    body, html {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #0d0d0d; /* Background warna gelap */
+      overflow: hidden;
+      font-family: monospace;
+      color: #00ff00; /* Warna teks hijau ala terminal */
+    }
 
-video {
-    border: 2px solid #4CAF50;
-    border-radius: 8px;
-    max-width: 100%;
-    height: auto;
-}
+    /* Kontainer untuk teks bergulir */
+    .code-background {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+    }
+
+    /* Efek teks bergulir */
+    .code-scroll {
+      display: inline-block;
+      white-space: nowrap;
+      animation: scroll 15s linear infinite;
+      font-size: 1.5rem;
+      color: rgba(0, 255, 0, 0.7); /* Warna hijau dengan transparansi */
+    }
+
+    /* Animasi untuk efek bergulir */
+    @keyframes scroll {
+      0% { transform: translateY(100%); }
+      100% { transform: translateY(-100%); }
+    }
+  </style>
+</head>
+<body>
+  <!-- Kontainer teks -->
+  <div class="code-background">
+    <div class="code-scroll">
+      <p>System.out.println("Hello, World!");</p>
+      <p>int x = 10;</p>
+      <p>for (int i = 0; i < x; i++) {</p>
+      <p>&nbsp;&nbsp;&nbsp;System.out.println(i);</p>
+      <p>}</p>
+      <p>String message = "Welcome to Coding!";</p>
+      <p>function start() { return true; }</p>
+      <!-- Teks tambahan untuk efek visual -->
+    </div>
+  </div>
+</body>
+</html>
